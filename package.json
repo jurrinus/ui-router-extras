@@ -1,9 +1,9 @@
 {
-  "author": "Christopher Thielen",
+  "author": "Christopher Thielen & Jerry ten Brinke",
   "name": "ui-router-extras",
-  "version": "0.0.14",
-  "description": "UI-Router Extras: Sticky states, Future States, Deep State Redirect, Transition promise",
-  "homepage": "http://christopherthielen.github.io/ui-router-extras/",
+  "version": "0.0.1",
+  "description": "UI-Router Extras: Sticky states, Future States (modified), Deep State Redirect, Transition promise",
+  "homepage": "http://github.com/jurrinus/ui-router-extras/",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
