@@ -6,7 +6,7 @@ UI-Router is the defacto router for AngularJS.
 UI-Router Extras adds additional features to help you write large modular applications.
 - Sticky State 
 - Deep State Redirect 
-- Future State
+- Future State <modified from the master>
 - Previous State
 - And More?
 
