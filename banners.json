@@ -4,11 +4,11 @@
     " * UI-Router Extras: Sticky states, Future States, Deep State Redirect, Transition promise",
     " * <%= module %>",
     " * @version <%= pkg.version %>",
-    " * @link http://christopherthielen.github.io/ui-router-extras/",
+    " * @link http://github.com/jurrinus/ui-router-extras.git",
     " * @license MIT License, http://www.opensource.org/licenses/MIT",
     " */"
   ],
   "minbanner": [
-    "/** UI-Router Extras v.<%= pkg.version %> <%= module %> http://christopherthielen.github.io/ui-router-extras/ - MIT License */"
+    "/** UI-Router Extras v.<%= pkg.version %> <%= module %> http://github.com/jurrinus/ui-router-extras/ - MIT License */"
   ]
 }

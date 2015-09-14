@@ -6,7 +6,7 @@ UI-Router is the defacto router for AngularJS.
 UI-Router Extras adds additional features to help you write large modular applications.
 - Sticky State 
 - Deep State Redirect 
-- Future State <modified from the master>
+- Future State <modified from the master by jtb to manage future state differently>
 - Previous State
 - And More?
 
@@ -21,19 +21,19 @@ UI-Router Extras adds additional features to help you write large modular applic
 ## Monolithic Install
 1. download the files
 	1. NPM
-		1. run `npm install ui-router-extras --save-dev`
+		1. run `npm install jtb-ct-ui-router-extras --save-dev`
 	2. Bower (alternatively)
-		1. `bower install ui-router-extras --save-dev`
+		1. `bower install jtb-ct-ui-router-extras --save-dev`
 2. Include the files in your app
-	1. `ct-ui-router-extras.min.js`
-3. Include the module as an angular dependency (i.e. in `app.js`) - `ct.ui.router.extras`
+	1. `jtb-ct-ui-router-extras.min.js`
+3. Include the module as an angular dependency (i.e. in `app.js`) - `jtb-ct.ui.router.extras`
 
 ## Modular Install
 1. download the files
 	1. NPM
-		1. run `npm install ui-router-extras --save-dev`
+		1. run `npm install jtb-ct-ui-router-extras --save-dev`
 	2. Bower (alternatively)
-		1. `bower install ui-router-extras --save-dev`
+		1. `bower install jtb-ct-ui-router-extras --save-dev`
 2. Choose the modules you want.  You *must* include **core**.
    1. **core** Core requirement. Adds state.$$state() decorator (undocumented)
    2. **sticky** Sticky states
