@@ -1,12 +1,15 @@
 # Addons for Angular UI-Router:
 Full Website (description, API, demos): http://christopherthielen.github.io/ui-router-extras/
 
+Future state has been modified to manage nested routes and views. I have also added in the companion
+route provider.
+
 UI-Router is the defacto router for AngularJS.
 
 UI-Router Extras adds additional features to help you write large modular applications.
 - Sticky State 
 - Deep State Redirect 
-- Future State <modified from the master by jtb to manage future state differently>
+- Future State: modified from the master by jtb to manage future state differently
 - Previous State
 - And More?
 
