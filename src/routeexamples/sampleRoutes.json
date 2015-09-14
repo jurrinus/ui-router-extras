@@ -1,0 +1,255 @@
+[
+    {
+        "stateName": "sampleRoot",
+        "urlPrefix": "/sampleRoot",
+        "url": "/sampleRoot",
+        "abstract": "true",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "footer@": {
+                "templateUrl": "scripts/home/templates/footer.html",
+                "controller": "scripts/home/controllers/FooterCtrl"
+            },
+            "main@": {
+                "templateUrl": "scripts/sample/templates/sample.html",
+                "controller": "scripts/sample/controllers/SampleCtrl"
+            },
+            "header@": {
+                "templateUrl": "scripts/sample/templates/sampleNavBar.html",
+                "controller": "scripts/sample/controllers/SampleNavBarCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent",
+        "urlPrefix": "/samplecontent",
+        "url": "^/samplecontent",
+        "abstract": "true",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "sampleNavBar": {
+                "templateUrl": "scripts/sample/templates/sampleNavBar.html",
+                "controller": "scripts/sample/controllers/SampleNavBarCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.sampleDashboard",
+        "urlPrefix": "/sampleDashboard",
+        "url": "^/sampleDashboard",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "sampleDashboard": {
+                "templateUrl": "scripts/sample/templates/navigationBar/sampleDashboard.html",
+                "controller": "scripts/sample/controllers/navigationBar/SampleDashboardCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.params",
+        "urlPrefix": "/params",
+        "url": "^/params",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "paramView@": {
+                "templateUrl": "scripts/sample/templates/navigationBar/params.html",
+                "controller": "scripts/sample/controllers/navigationBar/ParamesCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.params.param",
+        "urlPrefix": "/params/param?name",
+        "url": "^/params/param?name",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "paramView@": {
+                "templateUrl": "scripts/sample/templates/navigationBar/paramView.html",
+                "controller": "scripts/sample/controllers/navigationBar/ParamViewCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.resources",
+        "urlPrefix": "/resources",
+        "url": "^/resources",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "resources": {
+                "templateUrl": "scripts/sample/templates/navigationBar/sampleResources.html",
+                "controller": "scripts/sample/controllers/navigationBar/SampleResourceCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.book",
+        "urlPrefix": "/book",
+        "url": "^/book",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "book": {
+                "templateUrl": "scripts/sample/templates/navigationBar/sampleBooks.html",
+                "controller": "scripts/sample/controllers/navigationBar/SampleBooksCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.param",
+        "urlPrefix": "/roster/param?name",
+        "url": "^/roster/param?name",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "roster@": {
+                "templateUrl": "scripts/sample/templates/navigationBar/sampleFiles.html",
+                "controller": "scripts/sample/controllers/navigationBar/SampleFilesCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.paramanalytics",
+        "urlPrefix": "/paramanalytics",
+        "url": "^/paramanalytics",
+        "type": "requireCtrl",
+        "data": {},
+        "sticky": true,
+        "views": {
+            "paramanalytics@": {
+                "templateUrl": "scripts/sample/templates/navigationBar/sampleParamAnalytics.html",
+                "controller": "scripts/sample/controllers/navigationBar/SampleParamAnalyticsCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.paramanalytics.param",
+        "urlPrefix": "/paramanalytics/param/param?name&id",
+        "url": "^/paramanalytics/param/param?name&id",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "paramanalyticsparam@": {
+                "templateUrl": "scripts/sample/templates/navigationBar/sampleParamAnalyticsParam.html",
+                "controller": "scripts/sample/controllers/navigationBar/SampleParamAnalyticsParamCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.bookshelf",
+        "urlPrefix": "/bookshelf",
+        "url": "^/bookshelf",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "bookshelf": {
+                "templateUrl": "scripts/sample/templates/navigationBar/sampleShelf.html",
+                "controller": "scripts/sample/controllers/navigationBar/SampleShelfsCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.sampleSpace",
+        "urlPrefix": "/sampleSpace",
+        "url": "^/sampleSpace",
+        "type": "requireCtrl",
+        "data": {},
+        "abstract": true,
+        "sticky": true,
+        "deepStateRedirect": true,
+        "views": {
+            "sampleSpace@": {
+                "templateUrl": "scripts/sample/templates/navigationBar/sampleSpace.html",
+                "controller": "scripts/sample/controllers/navigationBar/SampleSpaceCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.sampleSpace.param",
+        "urlPrefix": "/sampleSpace/param/param?name&id",
+        "url": "^/sampleSpace/param/param?name&id",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "sampleSpaceParam@": {
+                "templateUrl": "scripts/sample/templates/navigationBar/sampleSpaceParam.html",
+                "controller": "scripts/sample/controllers/navigationBar/SampleSpaceParamCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.dashboard",
+        "urlPrefix": "/dashboard/param?name&id",
+        "url": "^/dashboard/param?name&id",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "dashboardSpaceParam@": {
+                "templateUrl": "scripts/sample/templates/navigationBar/sampleSpaceParam.html",
+                "controller": "scripts/sample/controllers/navigationBar/DashboardSampleSpaceParamCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.search",
+        "urlPrefix": "/search",
+        "url": "^/search",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "sampleContent": {
+                "templateUrl": "scripts/sample/templates/search.html",
+                "controller": "scripts/sample/controllers/SampleSearchCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.resourceSearch",
+        "urlPrefix": "/resourceSearch",
+        "url": "^/resourceSearch",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "sampleContent": {
+                "templateUrl": "scripts/sample/templates/resourceSearch.html",
+                "controller": "scripts/sample/controllers/SampleResourceSearchCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.allSearchRoot",
+        "urlPrefix": "/allSearchRoot",
+        "url": "^/allSearchRoot",
+        "abstract": "true",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "sampleContent": {
+                "templateUrl": "scripts/sample/templates/allSearch.html",
+                "controller": "scripts/sample/controllers/SampleAllSearchCtrl"
+            }
+        }
+    },
+    {
+        "stateName": "sampleRoot.samplecontent.allSearchRoot.allSearch",
+        "urlPrefix": "/allSearch",
+        "url": "^/allSearch",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "students": {
+                "templateUrl": "scripts/sample/templates/search.html",
+                "controller": "scripts/sample/controllers/SampleSearchCtrl"
+            },
+            "resources": {
+                "templateUrl": "scripts/sample/templates/resourceSearch.html",
+                "controller": "scripts/sample/controllers/SampleResourceSearchCtrl"
+            }
+        }
+    }
+]
