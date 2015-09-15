@@ -1,8 +1,8 @@
 /**
  * UI-Router Extras: Sticky states, Future States, Deep State Redirect, Transition promise
  * Module: future
- * @version 0.0.14
- * @link http://christopherthielen.github.io/ui-router-extras/
+ * @version 1.0.1
+ * @link http://github.com/jurrinus/ui-router-extras.git
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
 (function(angular, undefined){
@@ -68,6 +68,7 @@
         function assembleFutureStates($state, options) {
             if (options.url && options.url.length > 0) {
                 var urlComponents = options.url.split(/\./);
+                var stateName = '';
                 while (urlComponents.length) {
                     var urlPrefix = urlComponents.join("/");
                     var stateNames = futureUrlPrefixes[urlPrefix].stateName.split('.');
