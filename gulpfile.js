@@ -129,7 +129,7 @@ gulp.task('karma:debug', ['scripts'], function() {
 
 gulp.task('changelog', function() {
   require('conventional-changelog')({
-    repository: 'https://github.com/christopherthielen/ui-router-extras',
+    repository: 'https://github.com/jurrinus/ui-router-extras',
     version: require('./package.json').version
   }, function(err, log) {
     console.log('Here is your changelog!', log);

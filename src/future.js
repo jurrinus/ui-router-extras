@@ -59,6 +59,7 @@
         function assembleFutureStates($state, options) {
             if (options.url && options.url.length > 0) {
                 var urlComponents = options.url.split(/\./);
+                var stateName = '';
                 while (urlComponents.length) {
                     var urlPrefix = urlComponents.join("/");
                     var stateNames = futureUrlPrefixes[urlPrefix].stateName.split('.');
