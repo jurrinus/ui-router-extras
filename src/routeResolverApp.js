@@ -1,5 +1,5 @@
 (function (angular) {
-    var app = angular.module('jtb.ui.router.route.extras', ['ct.ui.router.extras.future']);
+    var app = angular.module('jtb.ui.router.route.extras', []);
 
     function _futureRouteProvider() {
         'use strict';
@@ -105,7 +105,7 @@
                 return defer.promise;
             };
             return {
-                requireCtrl: requireCtrl
+                'requireCtrl': requireCtrl
             };
         })();
     };
