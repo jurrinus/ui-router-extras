@@ -1,7 +1,7 @@
 var _ = require('lodash');
 
 // List of independent ui-router-extras modules
-var moduleNames = [ 'core', 'dsr', 'sticky', 'future', 'previous', 'transition', 'statevis' ];
+var moduleNames = [ 'core', 'dsr', 'sticky', 'future', 'previous', 'transition', 'statevis', 'routeResolverApp', ];
 
 // convert them to module definitions, by convention
 var modules = _(moduleNames)

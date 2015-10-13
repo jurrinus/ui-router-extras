@@ -28,9 +28,9 @@ define([
 
     angular.module('teacherApp')
         .config(['$futureStateProvider', '$controllerProvider', '$compileProvider', '$filterProvider',
-            '$provide', 'routeResolverProvider', '$translateProvider',
+            '$provide', '$futureRouteProvider', '$translateProvider',
             function ($futureStateProvider, $controllerProvider, $compileProvider, $filterProvider,
-                      $provide, routeResolverProvider, $translateProvider) {
+                      $provide, $futureRouteProvider, $translateProvider) {
                 var app = angular.module('teacherApp');
 
                 app.register =
@@ -62,7 +62,7 @@ define([
                 };
 
                 $futureStateProvider.stateFactory('requireCtrl',
-                    routeResolverProvider.route.requireCtrl); // Register state factory that registers controller via eval.
+                    $futureRouteProvider.route.requireCtrl); // Register state factory that registers controller via eval.
 
                 $futureStateProvider.addResolve(loadAndRegisterFutureStates);
 
