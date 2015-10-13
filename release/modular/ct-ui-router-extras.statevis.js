@@ -1,7 +1,7 @@
 /**
  * UI-Router Extras: Sticky states, Future States, Deep State Redirect, Transition promise
  * Module: statevis
- * @version 1.0.1
+ * @version 1.0.3
  * @link http://github.com/jurrinus/ui-router-extras.git
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */

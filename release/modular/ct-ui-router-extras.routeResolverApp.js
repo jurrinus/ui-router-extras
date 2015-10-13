@@ -1,14 +1,14 @@
 /**
  * UI-Router Extras: Sticky states, Future States, Deep State Redirect, Transition promise
  * Module: routeResolverApp
- * @version 1.0.1
+ * @version 1.0.3
  * @link http://github.com/jurrinus/ui-router-extras.git
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
 (function(angular, undefined){
 "use strict";
 (function (angular) {
-    var app = angular.module('jtb.ui.router.route.extras', ['ct.ui.router.extras.future']);
+    var app = angular.module('jtb.ui.router.route.extras', []);
 
     function _futureRouteProvider() {
         'use strict';
@@ -114,7 +114,7 @@
                 return defer.promise;
             };
             return {
-                requireCtrl: requireCtrl
+                'requireCtrl': requireCtrl
             };
         })();
     };
