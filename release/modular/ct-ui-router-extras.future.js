@@ -276,7 +276,7 @@
     }]);
 
     // inject $futureState so the service gets initialized via $get();
-    app.run(['$futureState', function ($futureState, $rootScope) {
+    app.run(['$rootScope', function ($rootScope) {
         statesAddedQueue.itsNowRuntimeOhWhatAHappyDay($rootScope);
     }]);
 
