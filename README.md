@@ -66,3 +66,6 @@ The gulpfile.js default target generates the output files into a build/ and buil
 all unit tests on the modular files individually, and then runs the tests against the full build file.   When run 
 on the full build file, the test suite is run once against each version of UI-Router listed above.
 
+This repo is a fork from the orignal written by Christopher Thielen. It contains a different support mechanizm
+for future state.
+

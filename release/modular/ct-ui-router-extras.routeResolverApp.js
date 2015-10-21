@@ -1,7 +1,7 @@
 /**
  * UI-Router Extras: Sticky states, Future States, Deep State Redirect, Transition promise
  * Module: routeResolverApp
- * @version 1.0.3
+ * @version 1.0.4
  * @link http://github.com/jurrinus/ui-router-extras.git
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
@@ -37,6 +37,14 @@
                     'data': futureState.data || {}
 
                 };
+                // Need a way to expose state Data
+                if (futureState.stateData) {
+                    for (var key in futureState.stateData) {
+                        if (futureState.stateData.hasOwnProperty(key)) {
+                            stateData[key] = futureState.stateData[key];
+                        }
+                    }
+                }
                 if (futureState.sticky) {
                     stateData['sticky'] = futureState.sticky;
                 }
