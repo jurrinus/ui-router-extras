@@ -28,6 +28,14 @@
                     'data': futureState.data || {}
 
                 };
+                // Need a way to expose state Data
+                if (futureState.stateData) {
+                    for (var key in futureState.stateData) {
+                        if (futureState.stateData.hasOwnProperty(key)) {
+                            stateData[key] = futureState.stateData[key];
+                        }
+                    }
+                }
                 if (futureState.sticky) {
                     stateData['sticky'] = futureState.sticky;
                 }
