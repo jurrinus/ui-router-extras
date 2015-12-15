@@ -1,7 +1,7 @@
 {
   "author": "Christopher Thielen & Jerry ten Brinke",
   "name": "jtb-ui-router-extras",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "UI-Router Extras: Sticky states, Future States (modified), Deep State Redirect, Transition promise",
   "homepage": "http://github.com/jurrinus/ui-router-extras/",
   "license": "MIT",
