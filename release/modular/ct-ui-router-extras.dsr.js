@@ -1,7 +1,7 @@
 /**
  * UI-Router Extras: Sticky states, Future States, Deep State Redirect, Transition promise
  * Module: dsr
- * @version 1.0.5
+ * @version 1.0.6
  * @link http://github.com/jurrinus/ui-router-extras.git
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
